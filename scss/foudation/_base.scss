@@ -1,0 +1,35 @@
+body {
+    background: rgb(32,38,124);
+    background: -moz-linear-gradient(0deg, rgba(32,38,124,1) 0%, rgba(11,175,255,1) 50%, rgba(45,233,253,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(32,38,124,1) 0%, rgba(11,175,255,1) 50%, rgba(45,233,253,1) 100%);
+    background: linear-gradient(0deg, rgba(32,38,124,1) 0%, rgba(11,175,255,1) 50%, rgba(45,233,253,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#20267c",endColorstr="#2de9fd",GradientType=1);
+    font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+}
+
+$breakpoints: (
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px,
+) !default;
+@mixin mq($type, $bp1, $bp2:0) {
+    @if ($type == min) {
+        @media screen and (min-width: #{map-get($breakpoints, $bp1)}) {
+        @content;
+        }
+    } @else if ($type == max) {
+        $width: map-get($breakpoints, $bp1);
+        $width: $width - 1px;
+        @media screen and (max-width: #{$width}) {
+        @content;
+        }
+    } @else if ($type == bw) { // bw → between
+        $width: map-get($breakpoints, $bp2);
+        $width: $width - 1px;
+        @media screen and (min-width: #{map-get($breakpoints, $bp1)})
+        and (max-width: #{$width}) {
+        @content;
+        }
+    }
+}

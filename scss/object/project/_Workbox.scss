@@ -1,0 +1,87 @@
+.p-Work__menu {
+    display: flex;
+    justify-content: center;
+
+    li {
+        margin-top: 60px;
+        padding: 0 30px;
+        border-left: 2px solid;
+        border-right: 2px solid;
+    }
+    li:hover {
+        color: #ff0000;
+    }
+    li+li {
+        border-left: 0;
+        border-right: 0;
+    }
+    li:last-child{
+        border-right: 2px solid;
+    }
+ 
+
+}
+
+.p-Workweb {
+    margin-top: 20px;
+    justify-content: center;
+
+    li {
+        margin-right: 20px;
+
+        @include mq(max, md) {
+            margin: 20px auto 0;
+        }
+    }
+
+    .p-workimg {
+        width: 100%;
+
+        @include mq(max, md) {
+            width: 388px;
+            margin: 0 auto;
+        }
+
+        img {
+            border-radius: 50px;
+            max-width: 100%;
+            max-height: 388px;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+
+}
+
+.p-works {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .p-worklist2 {
+        background-color: rgb(128, 176, 204);
+        padding: 30px;
+        margin-right: 20px;
+        max-width: 450px;
+        @include mq(max, md) {
+            padding: 50px;
+            margin: 10px auto 0;
+        }
+
+        .p-worklogo {
+            width: 100%;
+
+            @include mq(max, md) {
+                text-align: center;
+                margin: 0;
+            }
+
+            img {
+                
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}

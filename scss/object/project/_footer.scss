@@ -1,0 +1,16 @@
+.p-footer {
+    position: relative;
+    .p-footer__icon{
+        position: absolute;
+        top:30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: inline-block;
+        text-align: center;
+
+    }
+    p {
+        padding-top: 120px;
+       text-align: center;
+    }
+}

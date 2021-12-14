@@ -1,0 +1,6 @@
+.u-clearflex {
+    display: flex;
+    @include mq(max, md) {
+        display: block;
+    }
+}

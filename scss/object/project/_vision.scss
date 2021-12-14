@@ -1,0 +1,93 @@
+.p-main__Visionbox {
+
+    p {
+        font-size: 18px;
+        margin: 22px auto 0;
+        border-radius: 50px;
+        background: #89d3ec;
+        box-shadow: inset 36px 36px 72px #74b3c9, inset -36px -36px 72px #9ef3ff;
+        max-width: 705px;
+        width: 100%;
+        padding: 36px 30px;
+        line-height: 1.5rem;
+
+        @include mq(max, md) {
+            font-size: 15px;
+        }
+        @include mq(max,sm){
+            font-size: 12px;
+        }
+    }
+
+}
+
+.p-main__Visiontitle2 {
+    margin: 80px auto 0;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 50px;
+    background: #e1f1f7;
+    box-shadow: inset 36px 36px 72px #adadad, inset -36px -36px 72px #fdfdfd;
+    max-width: 533px;
+    width: 100%;
+    padding: 33px 40px;
+    line-height: 1.5rem;
+
+    @include mq(max, md) {
+        font-size: 25px;
+    }
+    @include mq(max,sm){
+        font-size: 12px;
+    }
+}
+
+.p-main__visionboxcontent2 {
+    margin-top: 36px;
+}
+
+.p-main__Visionbox2 {
+    margin-right: 20px;
+    max-width: 381px;
+    width: 100%;
+    padding: 35px 20px;
+    border-radius: 50px;
+    background: #89d3ec;
+    box-shadow: inset 36px 36px 72px #74b3c9, inset -36px -36px 72px #9ef3ff;
+
+    @include mq(max, md) {
+        margin: 20px auto 0;
+        max-width: 681px;
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    p {
+        padding-top: 20px;
+        max-width: 341px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.5rem;
+
+        @include mq(max, md) {
+            max-width: 681px;
+            width: 100%;
+            font-size: 15px;
+        }
+        @include mq(max,sm){
+            font-size: 12px;
+        }
+    }
+}
+
+.p-main__Visionbox2:last-child {
+    margin-right: 0;
+
+    @include mq(max, md) {
+        margin: 20px auto 0;
+    }
+}

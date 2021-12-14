@@ -1,0 +1,41 @@
+.p-About__SKilllist {
+    margin-top: 20px;
+    @include mq(max,md){
+        margin: 0 auto;
+    }
+    .p-About_item {
+        max-width: 371px;
+        width: 100%;
+        border-radius: 72px;
+        background: #147ee1;
+        box-shadow: inset 34px 34px 68px #0b4880,
+            inset -34px -34px 68px #1db4ff;
+        margin-right: 20px;
+        @include mq(max,md){
+           margin: 20px auto 0;
+        }
+
+        .p-About_skilimag {
+            width: 100%;
+            text-align: center;
+            img {
+                max-width: 80%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
+.p-About__skilltext {
+    margin: 20px auto 0;
+    max-width: 970px;
+    width: 100%;
+    color: #FFFF;
+    @include mq(max,md){
+        font-size: 15px;
+    }
+    @include mq(max,sm){
+        font-size: 12px;
+    }
+}

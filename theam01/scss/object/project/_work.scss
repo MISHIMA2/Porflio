@@ -1,0 +1,43 @@
+.p-main__worklist {
+    margin-top: 30px;
+    @include mq(max,md){
+    margin: 20px auto 0;
+    }
+    li {
+        margin-right: 20px;
+        @include mq(max,md){
+            width: 389px;
+            margin: 20px auto 0;
+        }
+        @include mq(max,sm){
+            width: 100%;
+        }
+        .p-main__workimg {
+           width: 100%;
+            border-radius: 50px;
+            @include mq(max,md){
+                width: 389px;
+            }
+            @include mq(max,sm){
+                width: 100%;
+            }
+            img {
+
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 30px;
+            } 
+        }
+    }
+    li:last-child{
+        margin-right: 0;
+        @include mq(max,md){
+        width: 389px;
+        margin: 20px auto 0;
+        }
+        @include mq(max,sm){
+            width: 100%;
+        }
+    }
+}

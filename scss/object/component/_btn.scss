@@ -1,0 +1,19 @@
+.c-btn {
+    margin-top: 40px;
+    width: 230px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 72px;
+    background: linear-gradient(145deg, #1587f1, #1271cb);
+    box-shadow: 21px 21px 42px #0b4880,
+        -21px -21px 42px #1db4ff;
+    margin:  20px auto 0;
+}
+
+.c-btn:hover {
+    color: #ff0000;
+    border-radius: 72px;
+    background: #147ee1;
+    box-shadow: inset 21px 21px 42px #0b4880,
+        inset -21px -21px 42px #1db4ff;
+}

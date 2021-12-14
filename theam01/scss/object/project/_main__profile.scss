@@ -1,0 +1,73 @@
+/*プロフィールタイトル*/
+.p-main__titles {
+    margin-top: 206px;
+    font-size: 35px;
+    text-align: center;
+    margin: 81px auto 0;
+    text-align: center;
+    border-radius: 50px;
+    background: #e1f1f7;
+    box-shadow: inset 36px 36px 72px #d6d6d6, inset -36px -36px 72px #edf4f5;
+    max-width: 533px;
+    width: 100%;
+    padding: 33px 40px;
+    line-height: 1.5rem;
+
+            @include mq(max,md){
+                font-size: 28px;
+            }
+            @include mq(max,sm){
+                font-size: 25px;
+            }
+}
+
+/*プロフィールコンテンツ*/
+.p-main__profilebox {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+    @include mq(max, md) {
+        display: block;
+    }
+
+    /*プロフィール画像*/
+    .p-main__myimg {
+        max-width: 420px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 63px;
+        margin-right: 47px;
+        background: -moz-linear-gradient(0deg, rgba(32, 38, 124, 1) 0%, rgba(11, 175, 255, 1) 50%, rgba(45, 233, 253, 1) 100%);
+        box-shadow: 10px 10px 90px rgba(32, 38, 124, 1), -10px -10px 90px #9ef3ff;
+        @include mq(max,md){
+        margin:  20px auto 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 63px;
+        }
+    }
+
+    /*プロフィールテキスト*/
+    .p-main__profileText {
+        .p-main__text {
+            border-radius: 50px;
+            background: #89d3ec;
+            box-shadow: inset 36px 36px 72px #74b3c9, inset -36px -36px 72px #9ef3ff;
+            max-width: 483px;
+            width: 100%;
+            padding: 38px 40px;
+            font-size: 14px;
+            line-height: 1.5rem;
+            @include mq(max,md){
+                margin: 20px auto 0;
+            }
+            @include mq(max,sm){
+                font-size: 12px;
+            }
+        }
+    }
+}

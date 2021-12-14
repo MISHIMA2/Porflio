@@ -1,0 +1,30 @@
+.p-main__FV {
+    background-image: url(../img/indexphoto/TOP_FV01.jpg);
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    @include mq(max,sm){
+        background-position: left 70% center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .p-main__FVTitle {
+        font-size: 30px;
+        font-family: ta-pop-kaku,sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        position: absolute;
+        top:30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        @include mq(max,sm){
+            font-size: 25px;
+            background-color: rgba(255, 255, 255, 0.514);
+        }
+    }
+}
